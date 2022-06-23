@@ -231,10 +231,10 @@ console.log(newcar.show());
  export let department: string = "CSE";
  
  // index.ts
- import {name, department} from "./Student";
+ import {name as name, department as dept} from "./Student";  // Can Rename variables or functions
  
  function info():void{
-    console.log(`${name} is from ${department} department`);
+    console.log(`${name} is from ${dept} department`);
  }
  info();
  ```
