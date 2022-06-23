@@ -165,4 +165,62 @@ function requesthandler(RequestType:RequestType){
 }
 requesthandler("GET");
  ```
+
+### Working with Class  
+### Inheritance
+ ```
+class Car {
+  brand: string;
+  constructor(brand: string) {
+    this.brand = brand;
+  }
+}
+class Microbus extends Car {
+   model: string;
+
+  constructor(brand: string, model: string) {
+    super(brand);
+    this.model = model;
+  }
+
+  public show() {
+    return `This is a ${this.brand} and it's model is ${this.model}'s.`;
+  }
+}
+
+let newcar = new Microbus("Hiace", "2016");
+console.log(newcar.show()); 
+ ```
  
+### Abstract Class
+No instance can be created from an Abstract class
+For creating abstract method the parent class should be an abstract class 
+Abstract class can be extended. The entended class will must inherit all the abstract methods
+ ```
+abstract class Car {
+  brand: string;
+  constructor(brand: string) {
+    this.brand = brand;
+  }
+  abstract printbrand(): void ;
+}
+class Microbus extends Car {
+   model: string;
+
+  constructor(brand: string, model: string) {
+    super(brand);
+    this.model = model;
+  }
+
+  printbrand(): void {
+    console.log("Brand name: " + this.brand);
+  }
+
+  public show() {
+    return `This is a ${this.brand} and it's model is ${this.model}'s.`;
+  }
+}
+
+let newcar = new Microbus("Hiace", "2016");
+console.log(newcar.show()); 
+ ```
