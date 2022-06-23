@@ -6,10 +6,10 @@ https://www.tutorialsteacher.com/typescript
 
 ### Declare Variables
 ```
-function addNumbers(num1: number, num2: number) {
+function addnumbers(num1: number, num2: number) {
     console.log(num1 + num2);
 }
-addNumbers(10,20);
+addnumbers(10,20);
 ```
 ### Concatination
 ```
