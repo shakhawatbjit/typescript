@@ -238,3 +238,7 @@ console.log(newcar.show());
  }
  info();
  ```
+### tsconfig
+```
+tsc --init
+```
