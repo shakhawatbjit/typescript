@@ -224,3 +224,17 @@ class Microbus extends Car {
 let newcar = new Microbus("Hiace", "2016");
 console.log(newcar.show()); 
  ```
+### Export Import
+ ```
+ // Student.ts
+ export let name: string = "Rakib";
+ export let department: string = "CSE";
+ 
+ // index.ts
+ import {name, department} from "./Student";
+ 
+ function info():void{
+    console.log(`${name} is from ${department} department`);
+ }
+ info();
+ ```
