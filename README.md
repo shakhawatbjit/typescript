@@ -1,4 +1,4 @@
-## Typescript
+## Typescript Cheatsheet
   
 ### Resource
 https://www.tutorialsteacher.com/typescript
